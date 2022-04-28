@@ -1,0 +1,17 @@
+---
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  name: catapp-build-and-deploy
+spec:
+  params:
+  - name: URL
+    value: $(body.repository.clone_url)
+  - name: REVISION
+    value: $(body.pull_request.head.sha)
+  - name: NAMESPACE
+    value: catapp
+  - name: DEPLOYMENT
+    value: catapp
+  - name: SERVICE_ACCOUNT
+    value: pipeline
