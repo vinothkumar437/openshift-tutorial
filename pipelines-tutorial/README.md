@@ -14,4 +14,6 @@ curl -v \
    ${ROUTE_HOST}
 </pre>
 
-Reference URL: <a href="https://github.com/ncskier/catapp/tree/master/tekton"> Click here</a>
+Reference URL: 
+1. <a href="https://github.com/ncskier/catapp/tree/master/tekton">Click here</a>
+2. <a href="https://developer.ibm.com/tutorials/tekton-triggers-101/">Click here</a>
